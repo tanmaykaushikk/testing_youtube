@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import Header from './src/components/Header';
-import Footer from './src/components/Footer';
-import MainBody from './src/components/MainBody';
+import React, { Component } from "react";
+import { View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Navigation from "./src/Navigation/Navigation";
+
+const Stack = createStackNavigator();
 
 class App extends Component {
   render() {
     return (
-      <>
-      <Header/>
-      <MainBody/>
-      <Footer/>
-
-      </>
+      <Navigation/>
     );
   }
 }
